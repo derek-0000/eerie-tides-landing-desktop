@@ -1,0 +1,99 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 720px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 620px) {
+  .versions {
+    display: none;
+  }
+}
+
+@media (max-width: 350px) {
+  .tip,
+  .actions {
+    display: none;
+  }
+}
+
+
+.play-now-button, .leaderboard-link, .player-search-button, .call-to-action {
+  font-family: "MorganiteBold", sans-serif;
+  transition: all .2s ease-out;
+  margin: 0;
+}
+
+.gamertag-error, .story-container, .teammember-card, .call-to-action, .leaderboard-title, .table-header, .table-body, .player-input  {
+  font-family: "MorganiteBold", sans-serif;
+}
+
+@keyframes slideRight{
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+  100% {
+      transform: translate3d(1358px, 0, 0);
+  }
+}
+@keyframes slideLeft{
+  0% {
+      transform: translate3d(0, 0, 0);
+  }
+  100% {
+      transform: translate3d(-1358px, 0, 0);
+  }
+}
+@keyframes teamMembersSlide{
+  0% {
+    transform: translate3d(-800, 0, 0);
+
+  }
+  100% {
+      transform: translate3d(0, 0, 0);
+  }
+}
+
+.background-text-a{
+  background: url(./assets/eerie_tides_team_members.png) repeat-x;
+  width: 4074px;
+  height: 8px;
+  animation: slideRight 30s linear infinite;
+}
+.background-text-a2{
+  background: url(./assets/eerie_tides_team_members.png) repeat-x;
+  width: 4074px;
+  height: 8px;
+  animation: slideLeft 30s linear infinite;
+}
+.team-member-row{
+  
+  transform: translate3d(900px, 0, 0);
+  width: 3800px;
+  animation: teamMembersSlide 45s linear infinite;
+}
+
+.player-input{
+
+}
