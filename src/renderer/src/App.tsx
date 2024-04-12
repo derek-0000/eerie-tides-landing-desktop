@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import eerie_tides_logo from './assets/eerie_tides_logo.png'
 import landing_temp_cover from './assets/landing_temp_cover.jpeg'
 import TeamMembers from './components/TeamMembers'
+import { teamMembers } from './constants/members'
 
 function App(): JSX.Element {
   // const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
@@ -30,9 +31,10 @@ function App(): JSX.Element {
         <div className="story-container text-center">
           <div className=" text-5xl">STORY</div>
           <div className=" text-2xl tracking-wide">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt natus distinctio
-            eligendi totam autem perspiciatis perferendis qui! Odit nesciunt velit ipsa ut, nemo
-            iusto maiores numquam quisquam, illum earum odio.
+            Eerie tides is an under-water horror themed videogame. Where the
+            player gets imersed into an underwater accident, trying to uncover
+            the misteries that bring to reality that eerie feeling you get when
+            diving into deep waters.
           </div>
         </div>
         <img
@@ -51,15 +53,6 @@ function App(): JSX.Element {
         <div className="overflow-x-hidden">
           <div className=" h-8 background-text-a2"></div>
         </div>
-      </div>
-      <div className="text-white call-to-action my-32 flex flex-col items-center justify-center">
-        <div className="text-5xl">SEE YOUR TIMES</div>
-        <Link
-          to={'/leaderboard'}
-          className="leaderboard-link text-4xl bg-white text-black px-8 py-2 rounded-sm hover:bg-black hover:text-white"
-        >
-          Leaderboard
-        </Link>
       </div>
     </>
   )

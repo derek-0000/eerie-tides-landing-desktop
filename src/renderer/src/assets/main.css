@@ -89,9 +89,10 @@ body {
 }
 .team-member-row{
   
-  transform: translate3d(900px, 0, 0);
-  width: 3800px;
-  animation: teamMembersSlide 45s linear infinite;
+  /* transform: translate3d(900px, 0, 0); */
+  /* width: 3800px;
+  margin: auto;
+  animation: teamMembersSlide 45s linear infinite; */
 }
 
 .player-input{
